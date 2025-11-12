@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us — SPI Day Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- jQuery UI (optional if used on all pages) -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+
+  <!-- Main site stylesheet -->
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body id="top">
+  <div id="container">
+
+    <!-- HEADER -->
+    <header>
+      <h1>About Us</h1>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="itineraries.html">Half Day Itineraries</a></li>
+        <li><a href="beach-access.html">Beach Accesses</a></li>
+        <li><a href="sea-turtle.html">Sea Turtle, Inc.</a></li>
+        <li><a href="budget-food.html">Budget Food</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <section class="panel" id="about-section">
+      <h2>About Us Section</h2>
+
+      <p><b>Welcome to SPI Day Planner!</b> We’re a small, locally inspired project built to help visitors make the most of their time at <i>South Padre Island</i> without feeling rushed or overwhelmed. Whether you’re coming for a quick beach trip, a family weekend, or a spontaneous half-day getaway — we’ve got you covered.</p>
+
+      <ul>
+        <li><b>Our Goal:</b> To simplify trip planning with clear, easy itineraries for families and students.</li>
+        <li><b>Our Approach:</b> We focus on short, realistic plans that help you enjoy the best of SPI — beaches, food, and local experiences — all within half a day.</li>
+        <li><b>Why It Matters:</b> Many visitors don’t have time to explore every corner of the island, so we designed this planner to highlight what’s truly worth seeing and doing.</li>
+      </ul>
+
+      <p>SPI Day Planner is created by <b>Ryan Santillan</b> as part of a digital media project to showcase accessible, user-friendly tourism design. It combines practical trip planning, clean layouts, and visual navigation — built with HTML, CSS, and simple interactivity.</p>
+
+      <p>We hope this guide makes your next SPI visit smoother, simpler, and sunnier 🌴</p>
+
+      <!-- Optional space at bottom to match screenshot spacing -->
+      <div style="height:200px;"></div>
+    </section>
+
+    <!-- PHOTO CARD ROW (same as on home page) -->
+    <section class="cards-row" aria-label="Quick links">
+      <a class="card" href="https://www.cameroncountyparks.com/isla-blanca-park/" target="_blank" rel="noopener noreferrer">
+        <img src="images/sunsetplan.jpeg" alt="Sunset at Isla Blanca Park" />
+        <span class="card-title">Sunset Plan — Isla Blanca</span>
+      </a>
+
+      <a class="card" href="https://www.myspi.org/departments/beach/dune-and-beach-access" target="_blank" rel="noopener noreferrer">
+        <img src="images/beachaccess.jpeg" alt="Wide sandy beach access" />
+        <span class="card-title">Beach Access Map &amp; Fees</span>
+      </a>
+
+      <a class="card" href="sea-turtle.html">
+        <img src="images/sea turtle.jpeg" alt="Sea Turtle, Inc. entrance" />
+        <span class="card-title">Sea Turtle, Inc.</span>
+      </a>
+
+      <a class="card" href="budget-food.html">
+        <img src="images/budgeteat.jpeg" alt="Casual budget eats plate" />
+        <span class="card-title">Budget Eats &amp; Snacks</span>
+      </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; <span id="year"></span> Ryan Santillan • SPI Day Planner</p>
+      <p><a href="#top" class="back-to-top">Back to Top ↑</a></p>
+    </footer>
+  </div>
+
+  <!-- YEAR SCRIPT -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

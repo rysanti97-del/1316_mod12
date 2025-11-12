@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Budget Food — SPI Day Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body id="top">
+  <div id="container">
+    <header><h1>Budget Food</h1></header>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="itineraries.html">Half Day Itineraries</a></li>
+        <li><a href="beach-access.html">Beach Accesses</a></li>
+        <li><a href="sea-turtle.html">Sea Turtle, Inc.</a></li>
+        <li><a href="budget-food.html">Budget Food</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <section class="panel" id="budget-food">
+      <h2>Under $15 Per Person</h2>
+      <ul>
+        <li>Tacos and combo plates</li>
+        <li>Pizza by the slice</li>
+        <li>Seafood baskets</li>
+        <li>Grab-and-go deli subs &amp; fruit cups</li>
+      </ul>
+
+      <h3 style="margin-top:12px;">Money Savers</h3>
+      <ul class="checklist">
+        <li>Share sides + water pitchers</li>
+        <li>Look for weekday specials</li>
+        <li>Pack big waters for the beach</li>
+      </ul>
+    </section>
+
+    <section class="cards-row" aria-label="Quick links">
+      <a class="card" href="https://www.cameroncountyparks.com/isla-blanca-park/" target="_blank" rel="noopener">
+        <img src="images/sunsetplan.jpeg" alt="Sunset at Isla Blanca Park"><span class="card-title">Sunset Plan — Isla Blanca</span>
+      </a>
+      <a class="card" href="https://www.myspi.org/departments/beach/dune-and-beach-access" target="_blank" rel="noopener">
+        <img src="images/beachaccess.jpeg" alt="Wide sandy beach access"><span class="card-title">Beach Access Map &amp; Fees</span>
+      </a>
+      <a class="card" href="sea-turtle.html">
+        <img src="images/sea turtle.jpeg" alt="Sea Turtle, Inc. entrance"><span class="card-title">Sea Turtle, Inc.</span>
+      </a>
+      <a class="card" href="budget-food.html">
+        <img src="images/budgeteat.jpeg" alt="Casual budget eats plate"><span class="card-title">Budget Eats &amp; Snacks</span>
+      </a>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Ryan Santillan • SPI Day Planner</p>
+      <p><a href="#top" class="back-to-top">Back to Top ↑</a></p>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
