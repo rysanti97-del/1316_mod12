@@ -24,46 +24,63 @@
       <h1>About Us</h1>
     </header>
 
-    <!-- NAVIGATION -->
+    <!-- NAV -->
     <nav aria-label="Primary">
       <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="itineraries.html">Half Day Itineraries</a></li>
-        <li><a href="beach-access.html">Beach Accesses</a></li>
-        <li><a href="sea-turtle.html">Sea Turtle, Inc.</a></li>
-        <li><a href="budget-food.html">Budget Food</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="index.html" class="nav-link">Home Page</a></li>
+        <li><a href="itineraries.html" class="nav-link">Half Day Itineraries</a></li>
+        <li><a href="beach-access.html" class="nav-link">Beach Accesses</a></li>
+        <li><a href="sea-turtle.html" class="nav-link">Sea Turtle, Inc.</a></li>
+        <li><a href="budget-food.html" class="nav-link">Budget Food</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
       </ul>
     </nav>
 
     <!-- MAIN CONTENT -->
     <section class="panel" id="about-section">
-      <h2>About Us Section</h2>
+      <h2>About Us</h2>
 
-      <p><b>Welcome to SPI Day Planner!</b> We’re a small, locally inspired project built to help visitors make the most of their time at <i>South Padre Island</i> without feeling rushed or overwhelmed. Whether you’re coming for a quick beach trip, a family weekend, or a spontaneous half-day getaway — we’ve got you covered.</p>
+      <p class="about-intro">
+        At <b>SPI Day Planner</b>, our mission is simple — help visitors enjoy
+        <i>South Padre Island</i> without stress, confusion, or wasted time.
+        Whether you're here for a quick beach trip, a family weekend, or a short getaway,
+        this planner gives you clear guidance so you spend more time relaxing and less time searching. 🌴
+      </p>
 
-      <ul>
-        <li><b>Our Goal:</b> To simplify trip planning with clear, easy itineraries for families and students.</li>
-        <li><b>Our Approach:</b> We focus on short, realistic plans that help you enjoy the best of SPI — beaches, food, and local experiences — all within half a day.</li>
-        <li><b>Why It Matters:</b> Many visitors don’t have time to explore every corner of the island, so we designed this planner to highlight what’s truly worth seeing and doing.</li>
-      </ul>
+      <div class="about-columns">
+        <div class="about-box">
+          <h3>Our Goal</h3>
+          <p>We simplify trip planning with clear, easy itineraries designed for families, students, and weekend visitors.</p>
+        </div>
 
-      <p>SPI Day Planner is created by <b>Ryan Santillan</b> as part of a digital media project to showcase accessible, user-friendly tourism design. It combines practical trip planning, clean layouts, and visual navigation — built with HTML, CSS, and simple interactivity.</p>
+        <div class="about-box">
+          <h3>Our Approach</h3>
+          <p>We focus on short, realistic plans that help you enjoy the best of SPI — beaches, food, and local experiences — all within half a day.</p>
+        </div>
 
-      <p>We hope this guide makes your next SPI visit smoother, simpler, and sunnier 🌴</p>
+        <div class="about-box">
+          <h3>Why It Matters</h3>
+          <p>Many visitors don’t have time to explore every corner of the island, so we designed this planner to highlight what is truly worth seeing and doing.</p>
+        </div>
+      </div>
 
-      <!-- Optional space at bottom to match screenshot spacing -->
-      <div style="height:200px;"></div>
+      <p class="about-footer">
+        SPI Day Planner is created by <b>Ryan Santillan</b> as part of a digital media project to showcase
+        accessible, user-friendly tourism design. It combines practical trip planning, clean layouts,
+        and visual navigation — built with HTML, CSS, and simple interactivity.
+        We hope this guide makes your next SPI visit smoother, simpler, and sunnier. ☀️
+      </p>
     </section>
 
     <!-- PHOTO CARD ROW (same as on home page) -->
-    <section class="cards-row" aria-label="Quick links">
-      <a class="card" href="https://www.cameroncountyparks.com/isla-blanca-park/" target="_blank" rel="noopener noreferrer">
+    <section class="cards-row" aria-label="Plan by Activity">
+      <a class="card" href="itineraries.html">
         <img src="images/sunsetplan.jpeg" alt="Sunset at Isla Blanca Park" />
         <span class="card-title">Sunset Plan — Isla Blanca</span>
       </a>
 
-      <a class="card" href="https://www.myspi.org/departments/beach/dune-and-beach-access" target="_blank" rel="noopener noreferrer">
+      <a class="card" href="beach-access.html">
         <img src="images/beachaccess.jpeg" alt="Wide sandy beach access" />
         <span class="card-title">Beach Access Map &amp; Fees</span>
       </a>
@@ -90,5 +107,16 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
+  <!-- Active nav highlight -->
+  <script>
+    const currentPage = window.location.pathname.split("/").pop();
+    document.querySelectorAll("nav a").forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
 </body>
 </html>

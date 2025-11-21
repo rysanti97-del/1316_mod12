@@ -14,95 +14,104 @@
   <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body id="top">
   <div id="container">
+
     <!-- HEADER -->
     <header>
-      <h1>South Padre Island Day Planner</h1>
+      <h1>SPI Day Planner</h1>
+      <p class="subtitle">Practical plans for families &amp; students on short trips</p>
     </header>
 
-    <!-- NAVIGATION -->
+    <!-- NAV -->
     <nav aria-label="Primary">
       <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="itineraries.html">Half Day Itineraries</a></li>
-        <li><a href="beach-access.html">Beach Accesses</a></li>
-        <li><a href="sea-turtle.html">Sea Turtle, Inc.</a></li>
-        <li><a href="budget-food.html">Budget Food</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html" class="nav-link">Home Page</a></li>
+        <li><a href="itineraries.html" class="nav-link">Half Day Itineraries</a></li>
+        <li><a href="beach-access.html" class="nav-link">Beach Accesses</a></li>
+        <li><a href="sea-turtle.html" class="nav-link">Sea Turtle, Inc.</a></li>
+        <li><a href="budget-food.html" class="nav-link">Budget Food</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
       </ul>
     </nav>
 
-    <!-- WELCOME -->
+    <!-- WELCOME PANEL -->
     <section class="panel" id="welcome">
       <h2>Welcome</h2>
-      <p><b>Cut through the noise —</b> here’s how to enjoy <i>South Padre Island</i> in <b>half a day or less.</b>
-      This planner gives you clear plans, parking notes, and budget tips so you spend less time scrolling and more time in the sand 🏖️.</p>
+      <p class="home-intro">
+        <b>Cut through the noise.</b> This planner shows you how to enjoy
+        <i>South Padre Island</i> in <b>half a day or less</b> with simple routes,
+        parking notes, and budget tips. Use it as a quick-start guide before you
+        hit the beach so you spend more time in the sand and less time scrolling. 🏖️
+      </p>
     </section>
 
-    <!-- HALF-DAY ITINERARIES -->
-    <section class="panel" id="itineraries">
-      <h2>Half-Day Itineraries</h2>
-      <p><b>Plan Helper:</b> Choose a time of day and see sample morning, afternoon, and sunset plans.</p>
-      <div class="more-info">
-        <a href="itineraries.html" class="more-btn">More Info →</a>
+    <!-- QUICK OVERVIEW GRID -->
+    <section class="panel" id="home-overview">
+      <h2>Plan Your Visit</h2>
+
+      <div class="home-grid">
+        <article class="home-box">
+          <h3>Half Day Itineraries</h3>
+          <p>See sample morning, afternoon, and sunset plans that bundle the beach, Sea Turtle, Inc., and food into one realistic schedule.</p>
+          <a href="itineraries.html" class="more-btn">View Itineraries →</a>
+        </article>
+
+        <article class="home-box">
+          <h3>Best Beach Access</h3>
+          <p>Compare Isla Blanca, Andy Bowie, and free access points by fees, amenities, and vibe so you know exactly where to park.</p>
+          <a href="beach-access.html" class="more-btn">Beach Access Guide →</a>
+        </article>
+
+        <article class="home-box">
+          <h3>Sea Turtle, Inc.</h3>
+          <p>Get the basics on hours, cost, and what to expect at the turtle center, plus a map embed to help you find it quickly.</p>
+          <a href="sea-turtle.html" class="more-btn">Turtle Center Info →</a>
+        </article>
       </div>
     </section>
 
-    <!-- SEA TURTLE -->
-    <section class="panel" id="turtle">
-      <h2>Sea Turtle, Inc. (Turtle Center) 🐢</h2>
-      <ul>
-        <li><b>Hours:</b> Plan <i>30–60 minutes</i> for exhibits &amp; resident turtles.</li>
-        <li><b>Cost:</b> Budget-friendly; check current pricing.</li>
-        <li><b>What to expect:</b> Conservation exhibits, rehab stories, gift shop.</li>
-        <li><b>Why it’s great:</b> Kids/students love the <i>hands-on learning</i> and <b>cute turtles</b>.</li>
-      </ul>
-      <div class="map-embed">
-        <iframe title="Sea Turtle, Inc. Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.7923520821484!2d-97.1659!3d26.1144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866f917c7b4c6e37%3A0x0!2sSea%20Turtle%2C%20Inc.!5e0!3m2!1sen!2sus!4v1700000000000"
-          loading="lazy"></iframe>
-      </div>
-      <div class="more-info">
-        <a href="sea-turtle.html" class="more-btn">More Info →</a>
+    <!-- TRIP HELP TRIO -->
+    <section id="trip-help" class="panel trio">
+      <div class="trio-grid">
+        <article class="mini">
+          <h3>Budget Eats &amp; Snacks 🍤</h3>
+          <ul>
+            <li><b>Under $15 per person:</b> tacos, pizza, seafood baskets.</li>
+            <li><b>Family-friendly:</b> Combo plates, share sides, water pitchers.</li>
+            <li><b>Grab-and-go:</b> Deli subs, fruit cups, big waters for the beach.</li>
+          </ul>
+          <p><a href="budget-food.html" class="more-btn small">Budget Food Page →</a></p>
+        </article>
+
+        <article class="mini">
+          <h3>What to Pack 🧴</h3>
+          <ul class="checklist">
+            <li>Sunscreen &amp; hats</li>
+            <li>Cash for fees</li>
+            <li>Water shoes</li>
+            <li>Refillable water bottles</li>
+            <li>Light cover-up for evenings</li>
+          </ul>
+        </article>
+
+        <article class="mini">
+          <h3>Parking Hacks 🚗</h3>
+          <ol class="roman">
+            <li>Arrive early for shaded spots</li>
+            <li>Carry small bills/cards for meters</li>
+            <li>Check park lots first on busy days</li>
+            <li>Watch tide/traction for drive-on beaches</li>
+            <li>Read signs to avoid tickets</li>
+          </ol>
+        </article>
       </div>
     </section>
 
-    <!-- BEST BEACH ACCESS -->
-    <section class="panel" id="beach-access">
-      <h2>Best Beach Access 🏖️</h2>
-      <p>Compare <b>Isla Blanca Park</b>, <b>Andy Bowie Park</b>, and free access points to match your time and budget.</p>
-      <div class="more-info">
-        <a href="beach-access.html" class="more-btn">More Info →</a>
-      </div>
-    </section>
-
-    <!-- BUDGET EATS -->
-    <section class="panel" id="budget-eats">
-      <h2>Budget Eats &amp; Snacks 🍤</h2>
-      <ul>
-        <li><b>Under $15 per person:</b> tacos, pizza, seafood baskets.</li>
-        <li><b>Family-friendly:</b> Combo plates, share sides, water pitchers.</li>
-        <li><b>Grab-and-go:</b> Deli subs, fruit cups, big waters for the beach.</li>
-      </ul>
-      <div class="more-info">
-        <a href="budget-food.html" class="more-btn">More Info →</a>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="panel" id="contact">
-      <h2>Contact Us 📩</h2>
-      <p>Have a suggestion or local tip to share? Let us know — we’d love to feature more hidden gems on the island!</p>
-      <div class="more-info">
-        <a href="contact.html" class="more-btn">Contact Page →</a>
-      </div>
-    </section>
-
-    <!-- PHOTO CARDS (moved to bottom) -->
+    <!-- PHOTO CARDS AT BOTTOM -->
     <section class="cards-row" aria-label="Plan by Activity">
       <a class="card" href="itineraries.html">
         <img src="images/sunsetplan.jpeg" alt="Sunset at Isla Blanca Park" />
@@ -130,10 +139,20 @@
       <p>&copy; <span id="year"></span> Ryan Santillan • SPI Day Planner</p>
       <p><a href="#top" class="back-to-top">Back to Top ↑</a></p>
     </footer>
+
   </div>
 
+  <!-- YEAR + ACTIVE NAV -->
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll("nav a").forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
   </script>
+
 </body>
 </html>
